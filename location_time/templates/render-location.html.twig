@@ -1,0 +1,41 @@
+{#
+/**
+* @file
+* Default theme implementation to display a block.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+<style>
+fieldset {
+  background-color: #eeeeee;
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+
+.location-block {
+    text-align: center;
+}
+</style>
+
+<div class='location-block'>
+
+    <fieldset>
+
+        <legend>Assignment: Site Time & Time</legend>
+
+        Country: {{ Country }} <hr>
+
+        City: {{ City }} <hr>
+
+        Time: {{ Time }} <hr>
+
+    </fieldset>
+
+</div>

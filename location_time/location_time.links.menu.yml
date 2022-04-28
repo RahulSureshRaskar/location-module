@@ -1,0 +1,6 @@
+location_time.form_location:
+  title: 'Set Location & Timezone'
+  route_name: location_time.form_location
+  description: 'A description for the menu entry'
+  parent: system.admin_config_system
+  weight: 99

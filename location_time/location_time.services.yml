@@ -1,0 +1,4 @@
+services:
+  fetch_time:
+    class: Drupal\location_time\FetchTime
+    arguments: []

@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Contains location_time.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function location_time_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the location_time module.
+    case 'help.page.location_time':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Get Site location and the current time for the location') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function location_time_theme() {
+  return [
+    'render_location' => [
+      'variables' => [
+        'Country' => NULL,
+        'City' => NULL,
+        'Time' => NULL,
+      ],
+      'render element' => 'children',
+    ],
+  ];
+}

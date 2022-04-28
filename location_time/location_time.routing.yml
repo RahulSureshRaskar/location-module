@@ -1,0 +1,9 @@
+location_time.form_location:
+  path: '/admin/config/location_time/formlocation'
+  defaults:
+    _form: '\Drupal\location_time\Form\FormLocation'
+    _title: 'FormLocation'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
